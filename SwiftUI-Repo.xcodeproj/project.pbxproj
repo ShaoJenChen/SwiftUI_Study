@@ -10,6 +10,7 @@
 		8D1B5B03257C9250003ECB4F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B5B02257C9250003ECB4F /* CardView.swift */; };
 		8D1B5B0B257CC7CE003ECB4F /* ButtonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B5B0A257CC7CE003ECB4F /* ButtonContentView.swift */; };
 		8D1B5B13257CF25E003ECB4F /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B5B12257CF25E003ECB4F /* StateView.swift */; };
+		8D1B5B18257D0FE4003ECB4F /* PathAndShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B5B17257D0FE4003ECB4F /* PathAndShape.swift */; };
 		8D29004E257B62EF00482A2E /* SwiftUI_RepoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29004D257B62EF00482A2E /* SwiftUI_RepoApp.swift */; };
 		8D290050257B62EF00482A2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29004F257B62EF00482A2E /* ContentView.swift */; };
 		8D290052257B62EF00482A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D290051257B62EF00482A2E /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		8D1B5B02257C9250003ECB4F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8D1B5B0A257CC7CE003ECB4F /* ButtonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonContentView.swift; sourceTree = "<group>"; };
 		8D1B5B12257CF25E003ECB4F /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		8D1B5B17257D0FE4003ECB4F /* PathAndShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathAndShape.swift; sourceTree = "<group>"; };
 		8D29004A257B62EF00482A2E /* SwiftUI-Repo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Repo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D29004D257B62EF00482A2E /* SwiftUI_RepoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_RepoApp.swift; sourceTree = "<group>"; };
 		8D29004F257B62EF00482A2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				8D1B5B02257C9250003ECB4F /* CardView.swift */,
 				8D1B5B0A257CC7CE003ECB4F /* ButtonContentView.swift */,
 				8D1B5B12257CF25E003ECB4F /* StateView.swift */,
+				8D1B5B17257D0FE4003ECB4F /* PathAndShape.swift */,
 				8D290051257B62EF00482A2E /* Assets.xcassets */,
 				8D290056257B62EF00482A2E /* Info.plist */,
 				8D290053257B62EF00482A2E /* Preview Content */,
@@ -270,6 +273,7 @@
 			files = (
 				8D1B5B0B257CC7CE003ECB4F /* ButtonContentView.swift in Sources */,
 				8D290050257B62EF00482A2E /* ContentView.swift in Sources */,
+				8D1B5B18257D0FE4003ECB4F /* PathAndShape.swift in Sources */,
 				8D1B5B13257CF25E003ECB4F /* StateView.swift in Sources */,
 				8D1B5B03257C9250003ECB4F /* CardView.swift in Sources */,
 				8D29004E257B62EF00482A2E /* SwiftUI_RepoApp.swift in Sources */,
