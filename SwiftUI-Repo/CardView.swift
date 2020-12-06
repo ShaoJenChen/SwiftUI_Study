@@ -39,6 +39,7 @@ struct CardView: View {
             }
             
         }
+        .frame(maxWidth: 300, maxHeight: 345)
         .cornerRadius(10)
         .padding(.horizontal)
         .overlay(
@@ -53,30 +54,44 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, content: {
-            VStack(alignment: .leading, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
-                Text("Your Reading")
-                    .font(.largeTitle)
+        VStack {
+            HStack {
+                VStack (alignment: .leading, spacing: nil, content:{
+                    Text("Your Reading")
+                        .font(.largeTitle)
+                        .foregroundColor(.primary)
+                        .fontWeight(.black)
+                    Text("message")
+                })
                 
-                CardView(imageName: "swiftui-button",
-                         category: "SwiftUI",
-                         heading: "Drawing a Border with Rounded Corners",
-                         author: "Simon Ng")
-                CardView(imageName: "flutter-app",
-                         category: "SwiftUI",
-                         heading: "Drawing a Border with Rounded Corners",
-                         author: "Simon Ng")
-                CardView(imageName: "macos-programming",
-                         category: "SwiftUI",
-                         heading: "Drawing a Border with Rounded Corners",
-                         author: "Simon Ng")
-                CardView(imageName: "natural-language-api",
-                         category: "SwiftUI",
-                         heading: "Drawing a Border with Rounded Corners",
-                         author: "Simon Ng")
-            })
-            .padding(.top)
-        })
-        
+                Spacer()
+            }
+            .padding([.top, .horizontal], /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            
+            ScrollView(.horizontal) {
+                HStack {
+                    
+                    CardView(imageName: "swiftui-button",
+                             category: "SwiftUI",
+                             heading: "Drawing a Border with Rounded Corners",
+                             author: "Simon Ng")
+                    CardView(imageName: "flutter-app",
+                             category: "SwiftUI",
+                             heading: "Drawing a Border with Rounded Corners",
+                             author: "Simon Ng")
+                    CardView(imageName: "macos-programming",
+                             category: "SwiftUI",
+                             heading: "Drawing a Border with Rounded Corners",
+                             author: "Simon Ng")
+                    CardView(imageName: "natural-language-api",
+                             category: "SwiftUI",
+                             heading: "Drawing a Border with Rounded Corners",
+                             author: "Simon Ng")
+                }
+            }
+            
+            Spacer()
+            
+        }
     }
 }
