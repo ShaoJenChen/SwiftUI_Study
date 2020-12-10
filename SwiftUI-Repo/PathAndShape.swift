@@ -13,7 +13,7 @@ struct PathAndShape: View {
     
     @State private var percent: Double = 0.75
     
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+//    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         Path({ path in
@@ -132,17 +132,29 @@ struct PathAndShape: View {
                     .font(.largeTitle)
                     .foregroundColor(.white)
             )
-            .onReceive(timer, perform: { _ in
-                withAnimation {
-                    guard self.percent < 1 else {
-                        
-                        self.timer.upstream.connect().cancel()
+//            .onReceive(timer, perform: { _ in
+//                withAnimation {
+//                    guard self.percent < 1 else {
+//
+//                        self.timer.upstream.connect().cancel()
+//                        return
+//
+//                    }
+//                    self.percent += 0.01
+//                }
+//            })
+            .onAppear(perform: {
+                
+                Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+                    if self.percent >= 1.0 {
+                        timer.invalidate()
                         return
-                        
                     }
                     self.percent += 0.01
                 }
+                
             })
+        
         ZStack {
             Circle()
                 .stroke(Color.gray, lineWidth: 10)

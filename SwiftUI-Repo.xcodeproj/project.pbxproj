@@ -17,6 +17,8 @@
 		8D290055257B62EF00482A2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D290054257B62EF00482A2E /* Preview Assets.xcassets */; };
 		8D290060257B62F000482A2E /* SwiftUI_RepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29005F257B62F000482A2E /* SwiftUI_RepoTests.swift */; };
 		8D29006B257B62F000482A2E /* SwiftUI_RepoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29006A257B62F000482A2E /* SwiftUI_RepoUITests.swift */; };
+		8D758469257E33FB00CC3E6A /* AnimationAndTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D758468257E33FB00CC3E6A /* AnimationAndTransition.swift */; };
+		8DD6222C2580E765007B29CD /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6222B2580E765007B29CD /* Transition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8D290066257B62F000482A2E /* SwiftUI-RepoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-RepoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D29006A257B62F000482A2E /* SwiftUI_RepoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_RepoUITests.swift; sourceTree = "<group>"; };
 		8D29006C257B62F000482A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D758468257E33FB00CC3E6A /* AnimationAndTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationAndTransition.swift; sourceTree = "<group>"; };
+		8DD6222B2580E765007B29CD /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				8D1B5B0A257CC7CE003ECB4F /* ButtonContentView.swift */,
 				8D1B5B12257CF25E003ECB4F /* StateView.swift */,
 				8D1B5B17257D0FE4003ECB4F /* PathAndShape.swift */,
+				8D758468257E33FB00CC3E6A /* AnimationAndTransition.swift */,
+				8DD6222B2580E765007B29CD /* Transition.swift */,
 				8D290051257B62EF00482A2E /* Assets.xcassets */,
 				8D290056257B62EF00482A2E /* Info.plist */,
 				8D290053257B62EF00482A2E /* Preview Content */,
@@ -271,11 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D758469257E33FB00CC3E6A /* AnimationAndTransition.swift in Sources */,
 				8D1B5B0B257CC7CE003ECB4F /* ButtonContentView.swift in Sources */,
 				8D290050257B62EF00482A2E /* ContentView.swift in Sources */,
 				8D1B5B18257D0FE4003ECB4F /* PathAndShape.swift in Sources */,
 				8D1B5B13257CF25E003ECB4F /* StateView.swift in Sources */,
 				8D1B5B03257C9250003ECB4F /* CardView.swift in Sources */,
+				8DD6222C2580E765007B29CD /* Transition.swift in Sources */,
 				8D29004E257B62EF00482A2E /* SwiftUI_RepoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
