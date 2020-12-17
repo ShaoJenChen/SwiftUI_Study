@@ -62,10 +62,15 @@ struct Navigation: View {
                 ForEach(articles) { article in
                     
                     ZStack {
-                        NavigationLink(destination: ArticleDetailView(article: article)) {
-                            EmptyView()
-                        }
+                        
                         ArticleRow(article: article)
+                        
+                        NavigationLink(
+                            destination: ArticleDetailView(article: article),
+                            label: {
+                                
+                            })
+                        .opacity(0)
                         
                     }
                     
@@ -84,6 +89,8 @@ struct ArticleDetailView: View {
     @Environment(\.presentationMode) var mode
     
     var article: Article
+    
+    @State private var showAlert = false
     
     var body: some View {
         ScrollView {
@@ -114,7 +121,7 @@ struct ArticleDetailView: View {
         }
         .edgesIgnoringSafeArea(.top)
         .navigationBarBackButtonHidden(true)
-        //        .navigationBarHidden(false)
+                .navigationBarHidden(false)
         .navigationBarItems(leading:
                                 Button(action: {
                                     self.mode.wrappedValue.dismiss()
@@ -124,7 +131,43 @@ struct ArticleDetailView: View {
                                         .foregroundColor(.white)
                                 })
         )
-        
+        ///overlay for sheet
+        .overlay(
+
+            HStack {
+                Spacer()
+
+                VStack {
+//                    Button(action: {
+//                        self.mode.wrappedValue.dismiss()
+//                    }, label: {
+//                        Image(systemName: "chevron.down.circle.fill")
+//                            .font(.largeTitle)
+//                            .foregroundColor(.white)
+//                    })
+//                    .padding(.trailing, 20)
+//                    .padding(.top, 40)
+                    
+                    Button(action: {
+                        self.showAlert = true
+                    }, label: {
+                        Image(systemName: "chevron.down.circle.fill")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                    })
+
+                    Spacer()
+                }
+            }
+        )
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Reminder"),
+                  message: Text("Are you sure you finish reading the article?"),
+                  primaryButton: .default(Text("Yes"),
+                                          action: { self.mode.wrappedValue.dismiss() }),
+                  secondaryButton: .cancel(Text("No")))
+        }
+
     }
 
 }

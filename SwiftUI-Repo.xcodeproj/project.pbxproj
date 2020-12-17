@@ -21,6 +21,7 @@
 		8D290060257B62F000482A2E /* SwiftUI_RepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29005F257B62F000482A2E /* SwiftUI_RepoTests.swift */; };
 		8D29006B257B62F000482A2E /* SwiftUI_RepoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29006A257B62F000482A2E /* SwiftUI_RepoUITests.swift */; };
 		8D758469257E33FB00CC3E6A /* AnimationAndTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D758468257E33FB00CC3E6A /* AnimationAndTransition.swift */; };
+		8DA862BC258B27B800F88EE8 /* SheetAndAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA862BB258B27B800F88EE8 /* SheetAndAlert.swift */; };
 		8DD6222C2580E765007B29CD /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6222B2580E765007B29CD /* Transition.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		8D29006A257B62F000482A2E /* SwiftUI_RepoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_RepoUITests.swift; sourceTree = "<group>"; };
 		8D29006C257B62F000482A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D758468257E33FB00CC3E6A /* AnimationAndTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationAndTransition.swift; sourceTree = "<group>"; };
+		8DA862BB258B27B800F88EE8 /* SheetAndAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAndAlert.swift; sourceTree = "<group>"; };
 		8DD6222B2580E765007B29CD /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				8D2426B3258499060093F26B /* List_ForEach_Identify.swift */,
 				8D2426BB2584C6EF0093F26B /* Navigation.swift */,
 				8D2426C32584DA620093F26B /* Article.swift */,
+				8DA862BB258B27B800F88EE8 /* SheetAndAlert.swift */,
 				8D290051257B62EF00482A2E /* Assets.xcassets */,
 				8D290056257B62EF00482A2E /* Info.plist */,
 				8D290053257B62EF00482A2E /* Preview Content */,
@@ -292,6 +295,7 @@
 				8D290050257B62EF00482A2E /* ContentView.swift in Sources */,
 				8D1B5B18257D0FE4003ECB4F /* PathAndShape.swift in Sources */,
 				8D1B5B13257CF25E003ECB4F /* StateView.swift in Sources */,
+				8DA862BC258B27B800F88EE8 /* SheetAndAlert.swift in Sources */,
 				8D1B5B03257C9250003ECB4F /* CardView.swift in Sources */,
 				8D2426B4258499060093F26B /* List_ForEach_Identify.swift in Sources */,
 				8D2426BC2584C6EF0093F26B /* Navigation.swift in Sources */,
